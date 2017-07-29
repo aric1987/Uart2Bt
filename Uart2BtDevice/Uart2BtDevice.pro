@@ -5,7 +5,6 @@
 #-------------------------------------------------
 
 QT       -= gui
-QT       += serialport
 
 TARGET = Uart2BtDevice
 TEMPLATE = lib
@@ -21,3 +20,4 @@ unix {
     target.path = /usr/lib
     INSTALLS += target
 }
+LIBS += -lcommon-qt -lQtSerialPort -lcommon-c

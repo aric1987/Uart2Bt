@@ -6,7 +6,6 @@
 
 QT       += core gui
 
-QT += serialport
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = test
@@ -17,3 +16,5 @@ SOURCES += main.cpp\
         main_window.cpp
 
 HEADERS  += main_window.h
+
+LIBS += -lcommon-qt -lQtSerialPort -lcommon-c
